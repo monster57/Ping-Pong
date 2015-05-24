@@ -1,1 +1,9 @@
 D:\Games\PingPong\PingPong\bin\Debug\PingPong.exe.config
+D:\Games\PingPong\PingPong\bin\Debug\PingPong.exe
+D:\Games\PingPong\PingPong\bin\Debug\PingPong.pdb
+D:\Games\PingPong\PingPong\obj\Debug\PingPong.csprojResolveAssemblyReference.cache
+D:\Games\PingPong\PingPong\obj\Debug\PingPong.Form1.resources
+D:\Games\PingPong\PingPong\obj\Debug\PingPong.Properties.Resources.resources
+D:\Games\PingPong\PingPong\obj\Debug\PingPong.csproj.GenerateResource.Cache
+D:\Games\PingPong\PingPong\obj\Debug\PingPong.exe
+D:\Games\PingPong\PingPong\obj\Debug\PingPong.pdb
