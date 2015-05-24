@@ -45,7 +45,7 @@ namespace PingPong
                 points += 1;
                 points_lbl.Text = points.ToString();
                 Random r =  new Random();
-                playground.BackColor = Color.FromArgb(r.Next(150, 255), r.Next(150, 255), r.Next(150, 255));
+                playground.BackColor = Color.FromArgb(r.Next(150, 255), r.Next(150, 255), r.Next(150, 255));    //get a random rbg color
             }
             if (ball.Left <= playground.Left)
             {
