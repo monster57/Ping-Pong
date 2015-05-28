@@ -34,20 +34,23 @@
             this.points_lbl = new System.Windows.Forms.Label();
             this.score_lbl = new System.Windows.Forms.Label();
             this.ball = new System.Windows.Forms.PictureBox();
-            this.racket = new System.Windows.Forms.PictureBox();
+            this.racket1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.racket2 = new System.Windows.Forms.PictureBox();
             this.playground.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racket1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racket2)).BeginInit();
             this.SuspendLayout();
             // 
             // playground
             // 
+            this.playground.Controls.Add(this.racket2);
             this.playground.Controls.Add(this.gameover_lbl);
             this.playground.Controls.Add(this.points_lbl);
             this.playground.Controls.Add(this.score_lbl);
             this.playground.Controls.Add(this.ball);
-            this.playground.Controls.Add(this.racket);
+            this.playground.Controls.Add(this.racket1);
             this.playground.Dock = System.Windows.Forms.DockStyle.Fill;
             this.playground.Location = new System.Drawing.Point(0, 0);
             this.playground.Name = "playground";
@@ -88,26 +91,36 @@
             // 
             // ball
             // 
-            this.ball.BackColor = System.Drawing.Color.Red;
+            this.ball.BackColor = System.Drawing.Color.SteelBlue;
             this.ball.Location = new System.Drawing.Point(75, 81);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(30, 30);
             this.ball.TabIndex = 1;
             this.ball.TabStop = false;
+            this.ball.Click += new System.EventHandler(this.ball_Click);
             // 
-            // racket
+            // racket1
             // 
-            this.racket.BackColor = System.Drawing.Color.Black;
-            this.racket.Location = new System.Drawing.Point(337, 447);
-            this.racket.Name = "racket";
-            this.racket.Size = new System.Drawing.Size(200, 20);
-            this.racket.TabIndex = 0;
-            this.racket.TabStop = false;
+            this.racket1.BackColor = System.Drawing.Color.Black;
+            this.racket1.Location = new System.Drawing.Point(337, 447);
+            this.racket1.Name = "racket1";
+            this.racket1.Size = new System.Drawing.Size(200, 20);
+            this.racket1.TabIndex = 0;
+            this.racket1.TabStop = false;
             // 
             // timer1
             // 
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // racket2
+            // 
+            this.racket2.BackColor = System.Drawing.Color.Black;
+            this.racket2.Location = new System.Drawing.Point(337, 12);
+            this.racket2.Name = "racket2";
+            this.racket2.Size = new System.Drawing.Size(200, 20);
+            this.racket2.TabIndex = 5;
+            this.racket2.TabStop = false;
             // 
             // Form1
             // 
@@ -121,7 +134,8 @@
             this.playground.ResumeLayout(false);
             this.playground.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.racket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racket1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.racket2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,11 +144,12 @@
 
         private System.Windows.Forms.Panel playground;
         private System.Windows.Forms.PictureBox ball;
-        private System.Windows.Forms.PictureBox racket;
+        private System.Windows.Forms.PictureBox racket1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label points_lbl;
         private System.Windows.Forms.Label score_lbl;
         private System.Windows.Forms.Label gameover_lbl;
+        private System.Windows.Forms.PictureBox racket2;
     }
 }
 
